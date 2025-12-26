@@ -4,6 +4,8 @@ const Input = (input) => {
     console.log(input)
   return (
     <div>
+      <field>{input.field}</field>
+      <br />
       <input placeholder={input.placeholder} type="text" />
       <br /><br />
     </div>
