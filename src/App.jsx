@@ -9,27 +9,70 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div style={{"border":"2px solid yellow", display:"flex"}}>
-      {/* <Button label="login" />
-      <Button label="SignUP" /> */}
+    <div
+      style={{
+        display: "flex",
+        gap: "40px",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "lightblue",
+        minHeight: "50vh",
+        padding: "40px"
+      }}
+    >
 
-      <div style={{"border":"2px solid red", maxWidth:"100%", gap:30 , backgroundColor: "#ffffff54"}}>
-        <h1>Login Form</h1>
-        {/* <Input placeholder = "ENter Your Name" label = "Name"/> */}
-        <Input field="Enter Email" placeholder="ENter Your Email" label="Email" />
-        <Input field="Enter Passward" placeholder="Enter Your Passward" label="Passward" />
+      {/* LOGIN */}
+      <div
+        style={{
+          color: "black",
+          padding: "30px",
+          backgroundColor: "#ffffff54",
+          width: "340px",
+          minHeight: "420px",
+          boxSizing: "border-box",
+          borderRadius: "8px"
+        }}
+      >
+        <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Login</h2>
+
+        <Input field="Enter Email" placeholder="Enter Your Email" label="Email" />
+        <Input field="Enter Password" placeholder="Enter Your Password" label="Password" />
+
+        <br /><br /><br /><br />
+        <Button label = "Login"/>
+
       </div>
 
-      <div style={{backgroundColor: "#ffffff75", gap:"5 0" ,maxWidth:"100%"}}>
-        <h1>SignUP Form</h1>
+      {/* SIGNUP */}
+      <div
+        style={{
+          color: "black",
+          padding: "30px",
+          backgroundColor: "#ffffff46",
+          width: "340px",
+          minHeight: "420px",
+          boxSizing: "border-box",
+          borderRadius: "8px"
+        }}
+      >
+        <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Sign Up</h2>
+
         <Input field="Enter Name" placeholder="Enter Your Name" />
         <Input field="Enter Email" placeholder="Enter Your Email" />
-        <Input field="Enter Passward" placeholder="Enter Your Passward" />
-        <Input field="Enter Conform Passward" placeholder="Enter Your Conform Passward" />
+        <Input field="Enter Password" placeholder="Enter Your Password" />
+        <Input field="Confirm Password" placeholder="Confirm Your Password" />
         <Input field="Enter Phone" placeholder="Enter Your Phone" />
+
+        <br /><br />
+
+        <div style={{alignItems:"center"}}>
+          <Button label = "SignUP"/>
+        </div>
       </div>
 
     </div>
+
+
   )
 }
 
